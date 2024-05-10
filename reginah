@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+  public static void main(String[] args) {
+    //switch statements
+    Scanner enter = new Scanner(System.in);
+    //System.out.print("Please enter the USSD code: ");
+
+    System.out.println("Menu: ");
+    System.out.println("0. Food  ");
+    System.out.println("1. Drinks ");
+    System.out.println("2. Salads ");
+
+    int menu = enter.nextInt();
+
+    if(menu >= 0 && menu <= 2){
+        switch(menu){
+          case 0:
+            System.out.println("Food menu");
+            System.out.println("1. Beef ");
+            System.out.println("2. Chicken " );
+            System.out.println("3. Pork ");
+          case 1:
+            System.out.println("Drinks menu");
+            System.out.println("1. Coca Cola ");
+            System.out.println("2. Cappy ");
+            System.out.println("3. Orange juice ");
+          case 2:
+            System.out.println("Salads menu");
+            System.out.println("1. Salsa ");
+            System.out.println("2. Chakalaka");
+        }
+
+    }else
+      System.out.println("Invalid option");
+  }
+}
